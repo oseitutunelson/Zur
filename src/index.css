@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --ink: #111a24;
+    --accent: #e8512a;
+  }
+  * {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-bone text-ink font-sans antialiased overflow-x-hidden;
+  }
+  ::selection {
+    background: #e8512a;
+    color: #ffffff;
+  }
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #111a24;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2a3947;
+    border-radius: 99px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e8512a;
+  }
+}
+
+@layer components {
+  .container-wide {
+    @apply mx-auto w-full max-w-wide px-6 sm:px-8 lg:px-12;
+  }
+
+  .display {
+    @apply font-display font-extrabold leading-[0.98] tracking-tightest;
+  }
+
+  /* Eyebrow label: "— OUR SERVICE" */
+  .eyebrow {
+    @apply inline-flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.22em];
+  }
+  .eyebrow::before {
+    content: '';
+    @apply h-px w-8 bg-current opacity-60;
+  }
+
+  .link-underline {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 1.5px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.35s ease;
+  }
+  .link-underline:hover {
+    background-size: 100% 1.5px;
+  }
+
+  .glass {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .glass-light {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .blueprint-grid {
+    background-image:
+      linear-gradient(rgba(232, 81, 42, 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(232, 81, 42, 0.06) 1px, transparent 1px);
+    background-size: 44px 44px;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .clip-reveal {
+    clip-path: inset(0 0 100% 0);
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
