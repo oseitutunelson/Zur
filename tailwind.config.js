@@ -8,13 +8,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        // ZUR Construction brand system — deep navy-charcoal + vermilion.
+        // ZUR Construction brand system — deep blue-navy + blue accent.
         ink: {
-          DEFAULT: '#111A24',
-          900: '#0C131B',
-          800: '#16212E',
-          700: '#1F2C3B',
-          600: '#2A3947',
+          DEFAULT: '#0F1B30',
+          900: '#0A1324',
+          800: '#13233D',
+          700: '#1B2F4D',
+          600: '#26405F',
         },
         bone: {
           DEFAULT: '#F4F5F7',
@@ -30,15 +30,15 @@ export default {
           600: '#41505F',
         },
         accent: {
-          DEFAULT: '#E8512A',
-          400: '#F26A3F',
-          600: '#C8401D',
+          DEFAULT: '#3B82F6',
+          400: '#60A5FA',
+          600: '#2563EB',
         },
         muted: '#66717E',
       },
       fontFamily: {
-        sans: ['"Sora"', 'system-ui', 'sans-serif'],
-        display: ['"Sora"', 'system-ui', 'sans-serif'],
+        sans: ['"Poppins"', 'system-ui', 'sans-serif'],
+        display: ['"Poppins"', 'system-ui', 'sans-serif'],
       },
       letterSpacing: {
         tightest: '-0.04em',
@@ -50,7 +50,7 @@ export default {
         // Shared soft elevation scale for the ZUR system.
         soft: '0 2px 8px -2px rgba(17, 26, 36, 0.10), 0 8px 24px -6px rgba(17, 26, 36, 0.10)',
         lift: '0 12px 40px -12px rgba(17, 26, 36, 0.22)',
-        accent: '0 10px 30px -8px rgba(232, 81, 42, 0.35)',
+        accent: '0 10px 30px -8px rgba(59, 130, 246, 0.35)',
       },
       keyframes: {
         marquee: {

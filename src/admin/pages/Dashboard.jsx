@@ -17,7 +17,7 @@ import { useDashboardStats, useDashboardCharts, useRecentActivity } from '../../
 import { needsSeeding, seedAllContent } from '../../lib/api/seed'
 import { formatDateTime, timeAgo } from '../../lib/format'
 
-const PIE_COLORS = ['#E8512A', '#111A24', '#66717E', '#F26A3F', '#C8401D', '#A3A3A3', '#404040', '#F6A385']
+const PIE_COLORS = ['#3B82F6', '#0F1B30', '#66717E', '#60A5FA', '#2563EB', '#A3A3A3', '#404040', '#93C5FD']
 
 function StatCard({ icon, label, value, sub, tone = 'accent', to }) {
   const body = (
@@ -98,11 +98,11 @@ export default function Dashboard() {
   const axisColor = isDark ? '#8a8a8a' : '#9a9a9a'
   const gridColor = isDark ? 'rgba(255,255,255,0.06)' : 'rgba(0,0,0,0.06)'
   const tooltipStyle = {
-    background: isDark ? '#16212E' : '#fff',
+    background: isDark ? '#13233D' : '#fff',
     border: `1px solid ${isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.08)'}`,
     borderRadius: 12,
     fontSize: 12,
-    color: isDark ? '#F4F5F7' : '#111A24',
+    color: isDark ? '#F4F5F7' : '#0F1B30',
   }
 
   return (
@@ -142,8 +142,8 @@ export default function Dashboard() {
               <CartesianGrid strokeDasharray="3 3" stroke={gridColor} vertical={false} />
               <XAxis dataKey="name" tick={{ fill: axisColor, fontSize: 11 }} tickLine={false} axisLine={false} interval={0} angle={-12} textAnchor="end" height={50} />
               <YAxis tick={{ fill: axisColor, fontSize: 11 }} tickLine={false} axisLine={false} allowDecimals={false} />
-              <Tooltip contentStyle={tooltipStyle} cursor={{ fill: 'rgba(232,81,42,0.08)' }} />
-              <Bar dataKey="value" fill="#E8512A" radius={[6, 6, 0, 0]} maxBarSize={48} />
+              <Tooltip contentStyle={tooltipStyle} cursor={{ fill: 'rgba(59,130,246,0.08)' }} />
+              <Bar dataKey="value" fill="#3B82F6" radius={[6, 6, 0, 0]} maxBarSize={48} />
             </BarChart>
           </ResponsiveContainer>
         </ChartCard>
@@ -175,15 +175,15 @@ export default function Dashboard() {
             <AreaChart data={charts?.traffic || []}>
               <defs>
                 <linearGradient id="traffic" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor="#E8512A" stopOpacity={0.35} />
-                  <stop offset="100%" stopColor="#E8512A" stopOpacity={0} />
+                  <stop offset="0%" stopColor="#3B82F6" stopOpacity={0.35} />
+                  <stop offset="100%" stopColor="#3B82F6" stopOpacity={0} />
                 </linearGradient>
               </defs>
               <CartesianGrid strokeDasharray="3 3" stroke={gridColor} vertical={false} />
               <XAxis dataKey="label" tick={{ fill: axisColor, fontSize: 11 }} tickLine={false} axisLine={false} />
               <YAxis tick={{ fill: axisColor, fontSize: 11 }} tickLine={false} axisLine={false} />
               <Tooltip contentStyle={tooltipStyle} />
-              <Area type="monotone" dataKey="visitors" stroke="#E8512A" strokeWidth={2} fill="url(#traffic)" />
+              <Area type="monotone" dataKey="visitors" stroke="#3B82F6" strokeWidth={2} fill="url(#traffic)" />
             </AreaChart>
           </ResponsiveContainer>
         </ChartCard>
@@ -195,7 +195,7 @@ export default function Dashboard() {
               <XAxis dataKey="label" tick={{ fill: axisColor, fontSize: 11 }} tickLine={false} axisLine={false} />
               <YAxis tick={{ fill: axisColor, fontSize: 11 }} tickLine={false} axisLine={false} allowDecimals={false} />
               <Tooltip contentStyle={tooltipStyle} />
-              <Line type="monotone" dataKey="count" stroke="#111A24" strokeWidth={2} dot={{ r: 3 }} />
+              <Line type="monotone" dataKey="count" stroke="#0F1B30" strokeWidth={2} dot={{ r: 3 }} />
             </LineChart>
           </ResponsiveContainer>
         </ChartCard>
