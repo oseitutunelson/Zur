@@ -8,33 +8,33 @@ export default {
   theme: {
     extend: {
       colors: {
-        // ZUR Construction brand system — deep blue-navy + blue accent.
+        // ZUR Construction brand system — black + dark grey + gold accent.
         ink: {
-          DEFAULT: '#0F1B30',
-          900: '#0A1324',
-          800: '#13233D',
-          700: '#1B2F4D',
-          600: '#26405F',
+          DEFAULT: '#1A1A1A',
+          900: '#0A0A0A',
+          800: '#161616',
+          700: '#232323',
+          600: '#333333',
         },
         bone: {
-          DEFAULT: '#F4F5F7',
-          200: '#ECEEF2',
-          300: '#DEE2E8',
+          DEFAULT: '#FAFAFA',
+          200: '#F2F2F2',
+          300: '#E5E5E5',
         },
-        // Cool steel secondary — borders, muted surfaces, dividers.
+        // Neutral dark-grey secondary — borders, muted surfaces, dividers.
         steel: {
-          DEFAULT: '#5B6B7E',
-          100: '#E5E9EF',
-          200: '#CBD3DD',
-          400: '#7C8A9C',
-          600: '#41505F',
+          DEFAULT: '#6E6E6E',
+          100: '#E8E8E8',
+          200: '#CFCFCF',
+          400: '#8C8C8C',
+          600: '#4A4A4A',
         },
         accent: {
-          DEFAULT: '#3B82F6',
-          400: '#60A5FA',
-          600: '#2563EB',
+          DEFAULT: '#C9A227',
+          400: '#E4C766',
+          600: '#A6821A',
         },
-        muted: '#66717E',
+        muted: '#6E6E6E',
       },
       fontFamily: {
         sans: ['"Poppins"', 'system-ui', 'sans-serif'],
@@ -48,9 +48,9 @@ export default {
       },
       boxShadow: {
         // Shared soft elevation scale for the ZUR system.
-        soft: '0 2px 8px -2px rgba(17, 26, 36, 0.10), 0 8px 24px -6px rgba(17, 26, 36, 0.10)',
-        lift: '0 12px 40px -12px rgba(17, 26, 36, 0.22)',
-        accent: '0 10px 30px -8px rgba(59, 130, 246, 0.35)',
+        soft: '0 2px 8px -2px rgba(0, 0, 0, 0.12), 0 8px 24px -6px rgba(0, 0, 0, 0.12)',
+        lift: '0 12px 40px -12px rgba(0, 0, 0, 0.28)',
+        accent: '0 10px 30px -8px rgba(201, 162, 39, 0.35)',
       },
       keyframes: {
         marquee: {

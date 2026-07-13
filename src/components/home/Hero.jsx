@@ -44,7 +44,7 @@ export default function Hero() {
         className="absolute inset-0"
         style={{
           background:
-            'linear-gradient(160deg, #13233D 0%, #0F1B30 55%, #0A1324 100%)',
+            'linear-gradient(160deg, #232323 0%, #141414 55%, #0A0A0A 100%)',
         }}
       />
       <div className="pointer-events-none absolute inset-0">
@@ -52,7 +52,7 @@ export default function Hero() {
           className="absolute inset-0 opacity-60"
           style={{
             background:
-              'radial-gradient(ellipse 60% 55% at 82% 30%, rgba(59, 130, 246, 0.20) 0%, transparent 60%)',
+              'radial-gradient(ellipse 60% 55% at 82% 30%, rgba(201, 162, 39, 0.22) 0%, transparent 60%)',
           }}
         />
         <div className="absolute inset-0 blueprint-grid opacity-[0.04]" />

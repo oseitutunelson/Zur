@@ -38,7 +38,7 @@ function Building({ floors = 7, position = [0, 0, 0], color = '#1b1b1b', progres
             {/* accent floor line */}
             <mesh position={[0, 0.27, 0.76]}>
               <boxGeometry args={[1.5, 0.04, 0.02]} />
-              <meshStandardMaterial color="#3b82f6" emissive="#3b82f6" emissiveIntensity={0.4} />
+              <meshStandardMaterial color="#c9a227" emissive="#c9a227" emissiveIntensity={0.4} />
             </mesh>
           </group>
         )
@@ -62,7 +62,7 @@ function Crane({ position = [0, 0, 0] }) {
     if (hook.current) hook.current.position.y = -1.4 + Math.sin(t * 0.5) * 0.35
   })
 
-  const mast = '#3b82f6'
+  const mast = '#c9a227'
   return (
     <group position={position}>
       {/* mast */}
@@ -117,7 +117,7 @@ function Scaffold({ position = [0, 0, 0] }) {
     <group position={position}>
       <mesh position={[0, 1.6, 0]}>
         <boxGeometry args={[1.9, 3.2, 1.9]} />
-        <meshBasicMaterial wireframe color="#26405f" />
+        <meshBasicMaterial wireframe color="#333333" />
       </mesh>
     </group>
   )
@@ -130,8 +130,8 @@ function BlueprintPanel({ position, rotation }) {
       <mesh position={position} rotation={rotation}>
         <planeGeometry args={[1.3, 0.9]} />
         <meshStandardMaterial
-          color="#0a2540"
-          emissive="#0a2540"
+          color="#2a2410"
+          emissive="#2a2410"
           emissiveIntensity={0.3}
           transparent
           opacity={0.5}
@@ -165,7 +165,7 @@ function Particles({ count = 120 }) {
       <bufferGeometry>
         <bufferAttribute attach="attributes-position" count={count} array={positions} itemSize={3} />
       </bufferGeometry>
-      <pointsMaterial size={0.04} color="#3b82f6" transparent opacity={0.5} sizeAttenuation />
+      <pointsMaterial size={0.04} color="#c9a227" transparent opacity={0.5} sizeAttenuation />
     </points>
   )
 }
@@ -216,7 +216,7 @@ function SceneContents({ scrollRef, mouseRef, onReady }) {
 
       {/* Soft base fill so shadows stay rich but never crushed */}
       <ambientLight intensity={0.4} />
-      <hemisphereLight args={['#bcd0ff', '#1a1407', 0.5]} />
+      <hemisphereLight args={['#ffe9b0', '#1a1407', 0.5]} />
       {/* Key light — warm, casts the primary shadows */}
       <directionalLight
         position={[6, 10, 4]}
@@ -232,9 +232,9 @@ function SceneContents({ scrollRef, mouseRef, onReady }) {
         color="#fff5d6"
       />
       {/* Cool rim light separates the towers from the dark backdrop */}
-      <directionalLight position={[-8, 5, -6]} intensity={0.7} color="#9bb8ff" />
+      <directionalLight position={[-8, 5, -6]} intensity={0.7} color="#caa640" />
       {/* Branded accent glow rising off the build site */}
-      <pointLight position={[0, 3, 3]} intensity={22} color="#3b82f6" distance={9} />
+      <pointLight position={[0, 3, 3]} intensity={22} color="#c9a227" distance={9} />
       <spotLight
         position={[-4, 9, 5]}
         angle={0.5}
@@ -267,9 +267,9 @@ function SceneContents({ scrollRef, mouseRef, onReady }) {
       {/* Ground */}
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, 0]} receiveShadow>
         <planeGeometry args={[60, 60]} />
-        <meshStandardMaterial color="#0a1324" metalness={0.2} roughness={0.9} />
+        <meshStandardMaterial color="#0a0a0a" metalness={0.2} roughness={0.9} />
       </mesh>
-      <gridHelper args={[60, 60, '#3b82f6', '#13233d']} position={[0, 0.01, 0]} />
+      <gridHelper args={[60, 60, '#c9a227', '#232323']} position={[0, 0.01, 0]} />
 
       <ContactShadows
         position={[0, 0.02, 0]}
@@ -336,8 +336,8 @@ function ProgressiveBuilding({ progressRef }) {
           <mesh position={[0, 0.27, 0.84]}>
             <boxGeometry args={[1.65, 0.05, 0.02]} />
             <meshStandardMaterial
-              color="#3b82f6"
-              emissive="#3b82f6"
+              color="#c9a227"
+              emissive="#c9a227"
               emissiveIntensity={0.6}
               transparent
             />
@@ -358,8 +358,8 @@ export default function ConstructionScene({ scrollRef, mouseRef, onReady }) {
       gl={{ antialias: true, alpha: true, powerPreference: 'high-performance' }}
       className="!absolute inset-0"
     >
-      <color attach="background" args={['#0a1324']} />
-      <fog attach="fog" args={['#0a1324', 14, 30]} />
+      <color attach="background" args={['#0a0a0a']} />
+      <fog attach="fog" args={['#0a0a0a', 14, 30]} />
       <AdaptiveDpr pixelated />
       <SceneContents scrollRef={ref} mouseRef={mouseRef} onReady={onReady} />
     </Canvas>
