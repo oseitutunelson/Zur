@@ -9,10 +9,10 @@ export default function Faq() {
   const [open, setOpen] = useState(0)
 
   return (
-    <section className="bg-bone py-24 sm:py-32">
+    <section className="bg-sage-50 py-24 sm:py-32">
       <div className="container-wide grid gap-14 lg:grid-cols-[0.9fr_1.1fr]">
         <div>
-          <SectionHeading eyebrow="— FAQ" title={<>Questions,<br /> answered</>} />
+          <SectionHeading eyebrow="FAQ" title={<>Questions,<br /> answered</>} />
           <p className="mt-6 max-w-sm text-muted">
             Everything you need to know about working with ZUR Construction. Still curious?
             Our team is one message away.

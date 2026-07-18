@@ -54,9 +54,9 @@ export default function Projects() {
 
   return (
     <>
-      <Seo title="Projects — ZUR Construction Portfolio" description="Explore ZUR Construction's portfolio of residential, luxury, commercial, educational, hospitality and infrastructure projects across Ghana." />
+      <Seo title="Projects | ZUR Construction Portfolio" description="Explore ZUR Construction's portfolio of residential, luxury, commercial, educational, hospitality and infrastructure projects across Ghana." />
       <PageHero
-        eyebrow="— Portfolio"
+        eyebrow="Portfolio"
         title="Projects Built Across Ghana"
         intro="A selection of the homes, villas, commercial buildings, schools and more we have designed, engineered and delivered."
         image="photo-1486325212027-8081e485255e"
@@ -66,9 +66,9 @@ export default function Projects() {
       <section className="bg-white py-12">
         <div className="container-wide grid grid-cols-2 gap-6 sm:grid-cols-4">
           {[
-            { v: 350, s: '+', l: 'Projects' },
+            { v: 240, s: '+', l: 'Projects' },
             { v: 10, s: '+', l: 'Sectors' },
-            { v: 18, s: '+', l: 'Years' },
+            { v: 12, s: '+', l: 'Years' },
             { v: 100, s: '%', l: 'On-time' },
           ].map((x) => (
             <Reveal key={x.l}>
@@ -82,7 +82,7 @@ export default function Projects() {
       </section>
 
       {/* Portfolio + filtering */}
-      <section className="bg-bone py-16 sm:py-20">
+      <section className="bg-sage-50 py-16 sm:py-20">
         <div className="container-wide">
           {/* filter bar */}
           <div className="flex flex-col gap-4">
@@ -122,7 +122,7 @@ export default function Projects() {
       {/* before/after */}
       <section className="bg-white py-24 sm:py-28">
         <div className="container-wide">
-          <SectionHeading eyebrow="— Transformations" title="Before & after" align="center" />
+          <SectionHeading eyebrow="Transformations" title="Before & after" align="center" />
           <div className="mx-auto mt-12 max-w-4xl">
             <BeforeAfter before="beforeafter-before.jpeg" after="beforeafter-after.jpeg" />
           </div>

@@ -8,26 +8,36 @@ export default {
   theme: {
     extend: {
       colors: {
-        // ZUR Construction brand system — black + dark grey + gold accent.
+        // ZUR Construction blended palette: navy, charcoal, sage, terracotta, gold.
         ink: {
-          DEFAULT: '#1A1A1A',
-          900: '#0A0A0A',
-          800: '#161616',
-          700: '#232323',
-          600: '#333333',
+          DEFAULT: '#1B2838',
+          900: '#0F1922',
+          800: '#1B2838',
+          700: '#2D2A26',
+          600: '#3A3632',
         },
         bone: {
-          DEFAULT: '#FAFAFA',
-          200: '#F2F2F2',
-          300: '#E5E5E5',
+          DEFAULT: '#FAF8F4',
+          200: '#F5F2ED',
+          300: '#EBE7E0',
         },
-        // Neutral dark-grey secondary — borders, muted surfaces, dividers.
         steel: {
           DEFAULT: '#6E6E6E',
           100: '#E8E8E8',
           200: '#CFCFCF',
           400: '#8C8C8C',
           600: '#4A4A4A',
+        },
+        sage: {
+          DEFAULT: '#8FA88E',
+          50: '#F3F6F3',
+          100: '#D9E3D8',
+          600: '#6B8269',
+        },
+        terracotta: {
+          DEFAULT: '#C4613A',
+          400: '#D97F5C',
+          600: '#A84F2C',
         },
         accent: {
           DEFAULT: '#C9A227',

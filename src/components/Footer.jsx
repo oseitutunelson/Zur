@@ -17,7 +17,7 @@ export default function Footer() {
   }
 
   return (
-    <footer className="relative overflow-hidden bg-ink text-white">
+    <footer className="relative overflow-hidden bg-ink-700 text-white">
       {/* Big CTA strip */}
       <div className="container-wide border-b border-white/10 py-16 sm:py-20">
         <div className="flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-center">
@@ -40,7 +40,7 @@ export default function Footer() {
         <div className="col-span-2 lg:col-span-2">
           <Logo className="text-white" />
           <p className="mt-5 max-w-xs text-sm leading-relaxed text-white/55">
-            Premium Ghanaian architectural design, construction and engineering —
+            Premium Ghanaian architectural design, construction and engineering,
             from first sketch to final handover.
           </p>
           <p className="mt-4 inline-flex items-center gap-2 rounded-full bg-accent/15 px-3.5 py-1.5 text-xs font-semibold text-accent">
@@ -107,7 +107,7 @@ export default function Footer() {
                 <Icon name="arrow" size={15} />
               </button>
             </div>
-            {sent && <p className="mt-2 text-xs text-accent">Thanks — you&apos;re subscribed.</p>}
+            {sent && <p className="mt-2 text-xs text-accent">Thank you, you&apos;re subscribed.</p>}
           </form>
         </div>
       </div>

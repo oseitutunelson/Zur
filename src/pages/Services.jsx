@@ -25,11 +25,11 @@ const BENEFITS = ['Fixed, transparent pricing', 'Certified expert team', 'On-tim
 export default function Services() {
   return (
     <>
-      <Seo title="Services — ZUR Construction & Engineering" description="Architecture, construction, renovation, engineering, project management, cost estimation, finishing and more." />
+      <Seo title="Services | ZUR Construction & Engineering" description="Architecture, construction, renovation, engineering, project management, cost estimation, finishing and more." />
       <PageHero
-        eyebrow="— Our Services"
+        eyebrow="Our Services"
         title="Every Discipline Under One Roof"
-        intro="Nine integrated service lines, delivered by one accountable partner — from design to handover."
+        intro="Nine integrated service lines, delivered by one accountable partner, from design to handover."
         image="photo-1486406146926-c627a92ad1ab"
       />
 
@@ -46,7 +46,7 @@ export default function Services() {
 
       {/* Detailed category sections */}
       {SERVICE_CATEGORIES.map((s, i) => (
-        <section key={s.slug} id={s.slug} className={`scroll-mt-24 py-24 sm:py-28 ${i % 2 ? 'bg-bone' : 'bg-white'}`}>
+        <section key={s.slug} id={s.slug} className={`scroll-mt-24 py-24 sm:py-28 ${i % 2 ? 'bg-sage-50' : 'bg-white'}`}>
           <div className="container-wide grid gap-12 lg:grid-cols-2 lg:items-center">
             <Reveal direction={i % 2 ? 'left' : 'right'} className={i % 2 ? 'lg:order-2' : ''}>
               <div className="relative overflow-hidden rounded-3xl">
@@ -58,7 +58,7 @@ export default function Services() {
             </Reveal>
 
             <div className={i % 2 ? 'lg:order-1' : ''}>
-              <span className="eyebrow text-ink/60">— 0{i + 1}</span>
+              <span className="eyebrow text-ink/60">0{i + 1}</span>
               <h2 className="display mt-4 text-4xl sm:text-5xl">{s.title}</h2>
               <p className="mt-5 text-muted">{s.blurb}</p>
 
@@ -88,9 +88,9 @@ export default function Services() {
       ))}
 
       {/* Process recap */}
-      <section className="bg-ink py-24 text-white sm:py-32">
+      <section className="bg-ink-700 py-24 text-white sm:py-32">
         <div className="container-wide">
-          <SectionHeading eyebrow="— Our Process" title="A clear path on every engagement" light align="center" />
+          <SectionHeading eyebrow="Our Process" title="A clear path on every engagement" light align="center" />
           <div className="mt-14 grid gap-px overflow-hidden rounded-3xl border border-white/10 bg-white/5 sm:grid-cols-2 lg:grid-cols-4">
             {PROCESS.map((p) => (
               <Reveal key={p.n}>

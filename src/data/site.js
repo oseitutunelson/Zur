@@ -11,7 +11,7 @@ export const COMPANY = {
   email: 'info@zurconstruction.com',
   address: 'East Legon, Ogbojo, Accra, Ghana',
   coverage: 'Nationwide Construction Services across Ghana',
-  hours: 'Mon – Fri · 8:00 AM – 6:00 PM',
+  hours: 'Mon to Fri · 8:00 AM to 6:00 PM',
   socials: [
     { label: 'Instagram', href: '#' },
     { label: 'LinkedIn', href: '#' },
@@ -29,9 +29,9 @@ export const NAV = [
 ]
 
 export const STATS = [
-  { value: 18, suffix: '+', label: 'Years of Experience' },
-  { value: 350, suffix: '+', label: 'Projects Completed' },
-  { value: 60, suffix: '+', label: 'Skilled Professionals' },
+  { value: 12, suffix: '+', label: 'Years of Experience' },
+  { value: 240, suffix: '+', label: 'Projects Completed' },
+  { value: 40, suffix: '+', label: 'Skilled Professionals' },
   { value: 100, suffix: '%', label: 'Happy Clients' },
 ]
 
@@ -216,7 +216,7 @@ export const PROCESS = [
   { n: '01', title: 'Consultation', text: 'We listen to your goals, site constraints and budget to frame the project.' },
   { n: '02', title: 'Planning', text: 'Feasibility, scheduling and a clear roadmap to delivery.' },
   { n: '03', title: 'Design', text: 'Architectural and structural design, visualized in 2D & 3D.' },
-  { n: '04', title: 'Cost Estimation', text: 'Detailed BOQ and transparent costing — no surprises.' },
+  { n: '04', title: 'Cost Estimation', text: 'Detailed BOQ and transparent costing with no surprises.' },
   { n: '05', title: 'Construction', text: 'Skilled crews build to spec with premium materials.' },
   { n: '06', title: 'Supervision', text: 'On-site quality control and progress monitoring throughout.' },
   { n: '07', title: 'Finishing', text: 'Interior and exterior finishing executed to a luxury standard.' },
@@ -296,7 +296,7 @@ export const PROJECTS = [
     duration: '20 months',
     budget: 'GH₵ 6.4M',
     gallery: ['ashford-1.jpeg', 'ashford-2.jpeg'],
-    challenge: 'Executing ornate classical detailing — columns, cornices and mouldings — to a flawless standard at scale.',
+    challenge: 'Executing ornate classical detailing such as columns, cornices and mouldings to a flawless standard at scale.',
     solution: 'Custom formwork and specialist plasterers crafted the columns and trims in place for a seamless, high-end result.',
     status: 'Finishing Phase',
   },
@@ -392,7 +392,7 @@ export const PROJECTS = [
     year: '2025',
     location: 'Amasaman, Greater Accra',
     cover: 'milestone-1.jpeg',
-    blurb: 'A family residence captured mid-build — from block-work walls and lintels to a fully secured, framed shell.',
+    blurb: 'A family residence captured mid build, from block work walls and lintels to a fully secured, framed shell.',
     scope: ['Structural Engineering', 'Construction', 'Site Supervision'],
     size: '360 m²',
     duration: 'In progress',
@@ -464,7 +464,7 @@ export const PARTNERS = [
 export const FAQS = [
   {
     q: 'What types of projects does ZUR Construction take on?',
-    a: 'We deliver residential homes, luxury villas, apartments, commercial buildings, office complexes, schools, churches, hostels, warehouses and shopping centres — across Ghana.',
+    a: 'We deliver residential homes, luxury villas, apartments, commercial buildings, office complexes, schools, churches, hostels, warehouses and shopping centres across Ghana.',
   },
   {
     q: 'Do you handle both design and construction?',
@@ -480,7 +480,7 @@ export const FAQS = [
   },
   {
     q: 'Do you provide cost estimates before I commit?',
-    a: 'Yes — we offer free initial consultations and can prepare preliminary estimates to help you plan before any commitment is made.',
+    a: 'Yes. We offer free initial consultations and can prepare preliminary estimates to help you plan before any commitment is made.',
   },
   {
     q: 'Where do you operate?',
@@ -512,7 +512,7 @@ export const COMMITMENTS = [
   {
     icon: 'shield',
     title: 'Commitment to Quality',
-    text: 'We build with premium materials and rigorous quality control at every milestone — from foundation to finishing — so every project stands the test of time.',
+    text: 'We build with premium materials and rigorous quality control at every milestone, from foundation to finishing, so every project stands the test of time.',
   },
   {
     icon: 'team',
@@ -522,7 +522,7 @@ export const COMMITMENTS = [
   {
     icon: 'tree',
     title: 'Sustainability Practices',
-    text: 'We build responsibly — efficient designs, durable materials and mindful use of resources that reduce waste and running costs over a building’s life.',
+    text: 'We build responsibly with efficient designs, durable materials and mindful use of resources that reduce waste and running costs over a building’s life.',
   },
   {
     icon: 'chat',

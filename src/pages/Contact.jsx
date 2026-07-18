@@ -27,7 +27,7 @@ export default function Contact() {
   // Build a formatted WhatsApp message from the form and open the chat.
   const buildWhatsAppUrl = () => {
     const lines = [
-      '*New Project Enquiry — ZUR Construction*',
+      '*New Project Enquiry | ZUR Construction*',
       '',
       form.name && `*Name:* ${form.name}`,
       form.email && `*Email:* ${form.email}`,
@@ -49,9 +49,9 @@ export default function Contact() {
 
   return (
     <>
-      <Seo title="Contact ZUR Construction — Request a Quote" description="Get in touch with ZUR Construction for a free consultation or project estimate. Offices, phone, email and WhatsApp." />
+      <Seo title="Contact ZUR Construction | Request a Quote" description="Get in touch with ZUR Construction for a free consultation or project estimate. Offices, phone, email and WhatsApp." />
       <PageHero
-        eyebrow="— Contact"
+        eyebrow="Contact"
         title="Let's Build Together"
         intro="Tell us about your project. We'll get back to you within one business day."
         image="photo-1497366754035-f200968a6e72"
@@ -73,12 +73,12 @@ export default function Contact() {
       </section>
 
       {/* Form + info */}
-      <section className="bg-bone py-24 sm:py-28">
+      <section className="bg-sage-50 py-24 sm:py-28">
         <div className="container-wide grid gap-12 lg:grid-cols-[1.2fr_0.8fr]">
           {/* Form */}
           <Reveal>
             <div className="rounded-3xl bg-white p-8 shadow-sm sm:p-10">
-              <SectionHeading eyebrow="— Request a Quote" title="Start your project" size="md" />
+              <SectionHeading eyebrow="Request a Quote" title="Start your project" size="md" />
               <form onSubmit={submit} className="mt-8 space-y-5">
                 <div className="grid gap-5 sm:grid-cols-2">
                   <Field label="Full Name" required value={form.name} onChange={update('name')} placeholder="Jane Cooper" />
@@ -97,7 +97,7 @@ export default function Contact() {
                 <div>
                   <label className="mb-2 block text-sm font-medium text-ink">Estimated Budget</label>
                   <div className="flex flex-wrap gap-2">
-                    {['< GH₵500k', 'GH₵500k–2M', 'GH₵2M–10M', 'GH₵10M+'].map((b) => (
+                    {['< GH₵500k', 'GH₵500k to 2M', 'GH₵2M to 10M', 'GH₵10M+'].map((b) => (
                       <button type="button" key={b} onClick={() => setForm((f) => ({ ...f, budget: b }))} className={`rounded-full border px-4 py-2 text-sm transition-colors ${form.budget === b ? 'border-ink bg-ink text-white' : 'border-ink/15 text-ink/70 hover:border-ink'}`}>
                         {b}
                       </button>
@@ -119,7 +119,7 @@ export default function Contact() {
                 </p>
                 {sent && (
                   <motion.p initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="flex items-center gap-2 rounded-xl bg-accent/15 px-4 py-3 text-sm font-medium text-ink">
-                    <Icon name="check" size={18} /> Opening WhatsApp — just press send and we&apos;ll be in touch within one business day.
+                    <Icon name="check" size={18} /> Opening WhatsApp. Just press send and we&apos;ll be in touch within one business day.
                   </motion.p>
                 )}
               </form>
@@ -129,7 +129,7 @@ export default function Contact() {
           {/* Info column */}
           <div className="space-y-6">
             <Reveal delay={0.1}>
-              <div className="rounded-3xl bg-ink p-8 text-white">
+              <div className="rounded-3xl bg-ink-700 p-8 text-white">
                 <h3 className="font-display text-xl font-bold">Our Offices</h3>
                 <p className="mt-3 inline-flex items-center gap-2 rounded-full bg-accent/15 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-accent">
                   <Icon name="pin" size={14} /> {COMPANY.coverage}
@@ -173,7 +173,7 @@ export default function Contact() {
         <div className="container-wide">
           <div className="overflow-hidden rounded-3xl border border-ink/10">
             <iframe
-              title="ZUR Construction office location — Accra, Ghana"
+              title="ZUR Construction office location in Accra, Ghana"
               src="https://www.openstreetmap.org/export/embed.html?bbox=-0.2350%2C5.5600%2C-0.1450%2C5.6300&layer=mapnik"
               className="h-[420px] w-full grayscale"
               loading="lazy"

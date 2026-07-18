@@ -34,7 +34,7 @@ export default function FinalCta() {
 
       <div className="container-wide relative text-center">
         <Reveal>
-          <span className="eyebrow text-accent">— Let&apos;s Get Started</span>
+          <span className="eyebrow text-accent">Let&apos;s Get Started</span>
         </Reveal>
         <Reveal delay={0.06}>
           <h2 className="display mx-auto mt-6 max-w-4xl text-5xl sm:text-7xl lg:text-8xl">

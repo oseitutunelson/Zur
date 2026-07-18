@@ -58,7 +58,7 @@ export default function ProjectDetails() {
 
   return (
     <>
-      <Seo title={`${project.name} — ZUR Construction Project`} description={project.blurb} />
+      <Seo title={`${project.name} | ZUR Construction Project`} description={project.blurb} />
 
       {/* Hero */}
       <section className="relative flex min-h-[80vh] items-end overflow-hidden bg-ink pb-16 pt-40 text-white">
@@ -99,11 +99,11 @@ export default function ProjectDetails() {
       <section className="bg-white py-24 sm:py-28">
         <div className="container-wide grid gap-14 lg:grid-cols-[1.4fr_0.6fr]">
           <div>
-            <SectionHeading eyebrow="— Overview" title="Project overview" size="md" />
+            <SectionHeading eyebrow="Overview" title="Project overview" size="md" />
             <Reveal delay={0.1}>
               <p className="mt-6 text-lg leading-relaxed text-muted">
                 {project.fullDesc ||
-                  `${project.name} is a ${(project.category || 'construction').toLowerCase()} project${project.location ? ` in ${project.location}` : ''}${project.duration ? `, delivered over ${project.duration}` : ''}. ZUR Construction led the engagement end-to-end — from design and engineering through construction and finishing — to a turnkey handover.`}
+                  `${project.name} is a ${(project.category || 'construction').toLowerCase()} project${project.location ? ` in ${project.location}` : ''}${project.duration ? `, delivered over ${project.duration}` : ''}. ZUR Construction led the engagement from design and engineering through construction and finishing to a turnkey handover.`}
               </p>
             </Reveal>
 
@@ -157,7 +157,7 @@ export default function ProjectDetails() {
       {/* Cost breakdown visual */}
       <section className="bg-bone py-24">
         <div className="container-wide grid gap-12 lg:grid-cols-2 lg:items-center">
-          <SectionHeading eyebrow="— Cost Breakdown" title="Where the budget went" size="md" />
+          <SectionHeading eyebrow="Cost Breakdown" title="Where the budget went" size="md" />
           <div className="space-y-5">
             {costBreakdown.map((c, i) => (
               <Reveal key={c.label} delay={i * 0.06}>
@@ -184,7 +184,7 @@ export default function ProjectDetails() {
       {/* Gallery */}
       <section className="bg-white py-24">
         <div className="container-wide">
-          <SectionHeading eyebrow="— Gallery" title="Inside the build" />
+          <SectionHeading eyebrow="Gallery" title="Inside the build" />
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {project.gallery.map((g, i) => (
               <Reveal key={g} delay={(i % 3) * 0.08}>

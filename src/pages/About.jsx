@@ -44,11 +44,11 @@ export default function About() {
 
   return (
     <>
-      <Seo title="About ZUR Construction — Premium Ghanaian Construction & Engineering" description="Our story, mission, vision, core values, construction process and our commitment to quality, safety and sustainability." />
+      <Seo title="About ZUR Construction | Premium Ghanaian Construction & Engineering" description="Our story, mission, vision, core values, construction process and our commitment to quality, safety and sustainability." />
       <PageHero
-        eyebrow="— About Us"
+        eyebrow="About Us"
         title="We Build What Others Imagine"
-        intro="Over a decade of engineering precision, craft and trust — delivered across Ghana."
+        intro="Over a decade of engineering precision, craft and trust, delivered across Ghana."
         image="photo-1541888946425-d81bb19240f5"
       />
 
@@ -59,13 +59,13 @@ export default function About() {
             <div className="relative">
               <img src={unsplash('photo-1504307651254-35680f356dfd', { w: 1000 })} alt="ZUR Construction team on site" loading="lazy" className="h-[520px] w-full rounded-3xl object-cover" />
               <div className="absolute -bottom-6 -right-6 hidden rounded-2xl bg-accent p-6 sm:block">
-                <p className="font-display text-4xl font-extrabold text-ink"><Counter value={350} suffix="+" /></p>
+                <p className="font-display text-4xl font-extrabold text-ink"><Counter value={240} suffix="+" /></p>
                 <p className="text-sm text-ink/70">Projects delivered</p>
               </div>
             </div>
           </Reveal>
           <div>
-            <SectionHeading eyebrow="— Company History" title="From a small crew to a trusted name" size="md" />
+            <SectionHeading eyebrow="Company History" title="From a small crew to a trusted name" size="md" />
             <Reveal delay={0.1}>
               <p className="mt-6 text-muted">
                 ZUR Construction began in Accra in 2008 with a single crew and an uncompromising
@@ -77,7 +77,7 @@ export default function About() {
             <Reveal delay={0.16}>
               <p className="mt-4 text-muted">
                 Today our in-house design studio, engineering division and construction
-                teams work as one — giving every client a single, accountable partner from
+                teams work as one, giving every client a single, accountable partner from
                 concept to completion. We have never lost the discipline we started with.
               </p>
             </Reveal>
@@ -96,10 +96,10 @@ export default function About() {
       </section>
 
       {/* Mission / Vision band */}
-      <section className="bg-ink py-24 text-white sm:py-28">
+      <section className="bg-ink-700 py-24 text-white sm:py-28">
         <div className="container-wide grid gap-8 md:grid-cols-2">
           {[
-            { t: 'Our Mission', d: 'To deliver buildings of enduring quality through engineering precision, transparency and craft — every project, every time.', icon: 'compass' },
+            { t: 'Our Mission', d: 'To deliver buildings of enduring quality through engineering precision, transparency and craft on every project, every time.', icon: 'compass' },
             { t: 'Our Vision', d: 'To be the most trusted name in Ghanaian construction, where design ambition meets flawless execution.', icon: 'bolt' },
           ].map((m, i) => (
             <Reveal key={m.t} delay={i * 0.1}>
@@ -114,9 +114,9 @@ export default function About() {
       </section>
 
       {/* Core Values */}
-      <section className="bg-bone py-24 sm:py-32">
+      <section className="bg-sage-50 py-24 sm:py-32">
         <div className="container-wide">
-          <SectionHeading eyebrow="— Core Values" title="What we stand on" align="center" />
+          <SectionHeading eyebrow="Core Values" title="What we stand on" align="center" />
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {VALUES.map((v, i) => (
               <Reveal key={v.title} delay={(i % 3) * 0.08}>
@@ -135,7 +135,7 @@ export default function About() {
       <section className="bg-white py-24 sm:py-32">
         <div className="container-wide">
           <SectionHeading
-            eyebrow="— Our Process"
+            eyebrow="Our Process"
             title="A clear path on every project"
             intro="A disciplined, transparent process that takes your project from first idea to a turnkey handover."
             align="center"
@@ -155,9 +155,9 @@ export default function About() {
       </section>
 
       {/* Milestones timeline */}
-      <section ref={timelineRef} className="bg-bone py-24 sm:py-32">
+      <section ref={timelineRef} className="bg-bone-200 py-24 sm:py-32">
         <div className="container-wide">
-          <SectionHeading eyebrow="— Our Journey" title="Milestones that shaped us" />
+          <SectionHeading eyebrow="Our Journey" title="Milestones that shaped us" />
           <div className="relative mt-16 pl-8 sm:pl-0">
             <div className="ms-line absolute left-8 top-0 h-full w-0.5 bg-accent sm:left-1/2" />
             <div className="space-y-12">
@@ -184,9 +184,9 @@ export default function About() {
       <section className="bg-ink py-24 text-white sm:py-32">
         <div className="container-wide">
           <SectionHeading
-            eyebrow="— Our Commitment"
+            eyebrow="Our Commitment"
             title="Professionalism you can build on"
-            intro="The standards that guide how we work — on every site, for every client."
+            intro="The standards that guide how we work on every site, for every client."
             light
             align="center"
           />
@@ -207,7 +207,7 @@ export default function About() {
       </section>
 
       <section className="bg-white py-24 sm:py-28">
-        <div className="container-wide rounded-3xl bg-ink px-8 py-16 text-center text-white sm:px-16">
+        <div className="container-wide rounded-3xl bg-terracotta px-8 py-16 text-center text-white sm:px-16">
           <h2 className="display mx-auto max-w-2xl text-4xl sm:text-5xl">Work with a team that owns the outcome</h2>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Button to="/contact" variant="accent">Start a Project</Button>

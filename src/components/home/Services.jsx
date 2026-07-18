@@ -9,12 +9,12 @@ import { HOME_SERVICE_CARDS } from '../../data/site'
 // Clean, compact portrait service cards with elegant line icons.
 export default function Services() {
   return (
-    <section id="services" className="bg-bone py-24 sm:py-32">
+    <section id="services" className="bg-sage-50 py-24 sm:py-32">
       <div className="container-wide">
         <SectionHeading
-          eyebrow="— Our Services"
+          eyebrow="Our Services"
           title={<>A Comprehensive Set<br className="hidden sm:block" /> Of Services</>}
-          intro="Everything you need to design, build and finish — delivered by one accountable partner."
+          intro="Everything you need to design, build and finish, delivered by one accountable partner."
           align="center"
         />
 

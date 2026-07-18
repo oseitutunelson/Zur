@@ -33,7 +33,7 @@ export default function About() {
 
           <Reveal delay={0.2}>
             <div className="absolute -bottom-8 -left-4 hidden w-56 rounded-2xl bg-ink p-6 text-white shadow-2xl sm:block">
-              <p className="font-display text-4xl font-extrabold text-accent">18+</p>
+              <p className="font-display text-4xl font-extrabold text-accent">12+</p>
               <p className="mt-1 text-sm text-white/60">Years of engineering excellence across Ghana.</p>
             </div>
           </Reveal>
@@ -44,7 +44,7 @@ export default function About() {
         {/* Copy */}
         <div>
           <SectionHeading
-            eyebrow="— About Us"
+            eyebrow="About Us"
             title={<>Sustainable And Innovative Development</>}
             size="md"
           />
@@ -61,8 +61,8 @@ export default function About() {
             <p className="mt-4 text-muted">
               Our work is grounded in quality workmanship, honest pricing and an
               uncompromising commitment to safety. From the first concept sketch to the
-              final handover, we own every detail — design, engineering, costing,
-              construction and finishing — so you have a single, accountable partner
+              final handover, we own every detail of design, engineering, costing,
+              construction and finishing, so you have a single, accountable partner
               devoted to excellence at every stage.
             </p>
           </Reveal>

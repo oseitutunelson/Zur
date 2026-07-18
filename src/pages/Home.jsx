@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Seo
-        title="ZUR Construction — Building Excellence From Design To Completion"
+        title="ZUR Construction | Building Excellence From Design To Completion"
         description="ZUR Construction delivers world-class architectural design, construction, engineering, renovation, and project management solutions."
       />
       <Hero />

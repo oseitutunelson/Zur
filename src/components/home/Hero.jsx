@@ -98,7 +98,7 @@ export default function Hero() {
                 className="max-w-md text-base leading-relaxed text-white/60"
               >
                 From foundation to finishing, we deliver world-class construction
-                built to international standards — engineered to last, delivered
+                built to international standards. It is engineered to last, delivered
                 on schedule, and finished to a premium standard.
               </motion.p>
 

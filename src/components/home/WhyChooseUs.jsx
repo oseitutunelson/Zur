@@ -9,7 +9,7 @@ export default function WhyChooseUs() {
     <section className="bg-white py-24 sm:py-32">
       <div className="container-wide">
         <SectionHeading
-          eyebrow="— Why Choose Us"
+          eyebrow="Why Choose Us"
           title="Built on trust, delivered with precision"
           intro="The qualities that make ZUR Construction the partner clients rely on for their most important builds."
           align="center"
@@ -19,7 +19,7 @@ export default function WhyChooseUs() {
           {WHY_US.map((w, i) => (
             <Reveal key={w.title} delay={(i % 2) * 0.06}>
               <div className="group flex items-start gap-4 border-b border-ink/10 py-5">
-                <span className="mt-0.5 grid h-10 w-10 shrink-0 place-items-center rounded-full bg-accent/15 text-ink transition-colors group-hover:bg-accent">
+                <span className="mt-0.5 grid h-10 w-10 shrink-0 place-items-center rounded-full bg-sage-100 text-ink transition-colors group-hover:bg-sage">
                   <Icon name={w.icon} size={18} />
                 </span>
                 <div>

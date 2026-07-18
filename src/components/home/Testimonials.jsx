@@ -11,9 +11,9 @@ export default function Testimonials() {
   const go = (d) => setI((p) => (p + d + TESTIMONIALS.length) % TESTIMONIALS.length)
 
   return (
-    <section className="bg-bone py-24 sm:py-32">
+    <section className="bg-bone-200 py-24 sm:py-32">
       <div className="container-wide">
-        <SectionHeading eyebrow="— Testimonials" title="What Our Clients Say About Us" />
+        <SectionHeading eyebrow="Testimonials" title="What Our Clients Say About Us" />
 
         <div className="mt-14 grid items-center gap-10 lg:grid-cols-[0.8fr_1.2fr]">
           {/* photo */}

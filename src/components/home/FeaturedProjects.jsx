@@ -76,10 +76,10 @@ export default function FeaturedProjects() {
   }
 
   return (
-    <section id="projects" className="bg-ink py-24 text-white sm:py-32">
+    <section id="projects" className="bg-ink-700 py-24 text-white sm:py-32">
       <div className="container-wide">
         <div className="flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-end">
-          <SectionHeading eyebrow="— Recent Work" title={<>Take A Look At Our<br className="hidden sm:block" /> Latest Projects</>} light />
+          <SectionHeading eyebrow="Recent Work" title={<>Take A Look At Our<br className="hidden sm:block" /> Latest Projects</>} light />
           <Reveal>
             <Button to="/projects" variant="outline-light">All Projects</Button>
           </Reveal>
@@ -172,7 +172,7 @@ export default function FeaturedProjects() {
         <div className="mt-24 grid gap-10 lg:grid-cols-2 lg:items-center">
           <Reveal>
             <div>
-              <span className="eyebrow text-accent">— Before & After</span>
+              <span className="eyebrow text-accent">Before &amp; After</span>
               <h3 className="display mt-5 text-4xl sm:text-5xl">
                 The transformation<br /> speaks for itself
               </h3>
